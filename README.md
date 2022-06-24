@@ -19,11 +19,13 @@ Using the model, homebuyers will be able to input the features of their new hous
 
 While homebuyers moving to King County are the primary stakeholders for this analysis, the model could also be used by the county government of King County, in promotional material for the town or for their own analysis. Local real estate agencies may find value in the model as well.
 
+A baseline simple linear regression model was used as a benchmark to compare model iterations to. Models were judged primarily on their validated R-squared and root mean squared error (RMSE) values. Root mean squared error was used over mean absolute error because the former penalizes large errors in prediction to a greater extent.
+
 <br>
 
 ## Understanding the Data
 
-This dataset contains data on over 20,000 home sales in King County, WA, from May 2014 to May 2015. Each home sale has a unique ID, sale price, and date of the transaction, along with 18 categorical and numerical features on the structure of the house and its accompanying property and neighborhood.
+This dataset contains data on over 20,000 home sales in King County, WA, from May 2014 to May 2015. Each home sale has a unique ID, sale price (the dependent variable in this analysis), and date of the transaction, along with 18 categorical and numerical features on the structure of the house and its accompanying property and neighborhood.
 
 <br>
 
@@ -37,8 +39,18 @@ A visualization of the relationship between variables using a correlation heatma
 
 <br>
 
-## Exploratory Data Analysis and Data Cleaning
+## Modeling and Regression Results
 
+The baseline model was a simple linear regression between square feet of living space, the most correlated feature in the correlation heatmap, and sale price. It was a decently strong baseline model, accounting for just under half the variation in sale price with an R-squared of about 0.48 and a RMSE just north of $238k. Successive models, displayed below, incorporated a variety of techniques to improve model performance, including feature enginnering, one-hot encoding, log-transforming, creating interaction terms in polynomial form, and recursive feature elimination.
 
+The final model, model 9, clocked in with an R-squared of 0.891 and an RMSE $115,719
 
+![Model iterations 0 - 4](https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/Graphs/Presentation%20Images/Slide_6.jpeg?raw=true)
 
+<br>
+
+![Model iterations 5 - 9](https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/Graphs/Presentation%20Images/Slide_7.jpeg?raw=true)
+
+![Observed vs predicted home sale prices plot](https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/Graphs/Observed_vs_Predicted.png?raw=true)
+
+<br>

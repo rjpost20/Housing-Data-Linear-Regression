@@ -29,6 +29,16 @@ This dataset contains data on over 20,000 home sales in King County, WA, from Ma
 
 ## Exploratory Data Analysis and Data Cleaning
 
-Initial exploratory data analysis revealed that the dataset contained 15 numerical features and six object (string) features. 
+Initial exploratory data analysis revealed that the dataset contains 15 numerical features and six object (string) features. Three of the object features: 'view', 'condition', and 'grade', are ordinal categorical variables. Additionally, NaN (missing) values are present in the 'waterfront', 'view', and 'yr_renovated' columns, and there are some '?' values in the 'sqft_basement' column, which explains why it is of datatype object. A quick analysis of the numerical data showed some large outliers in bedrooms and bathrooms variables of the dataset, along with the variables relating to square footage of the structure and property.
+
+A visualization of the relationship between variables using a correlation heatmap indicated that the features most highly correlated with sale price are square footage of living are in the house and number of bathrooms. There were no variables with any meaningful negative correlation with price, and many of the independent variables are highly correlated with each other.
 
 ![Heatmap data visualization](https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/Graphs/Presentation%20Images/Slide_5.jpeg?raw=true)
+
+<br>
+
+## Exploratory Data Analysis and Data Cleaning
+
+
+
+

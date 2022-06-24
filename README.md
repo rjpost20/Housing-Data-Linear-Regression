@@ -1,6 +1,6 @@
 # Phase 2 Project: *King County Housing Data Fair Price Model*
 
-![Bird's eye view of a neighborhood](https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/data/AdobeStock_296805446.jpeg?raw=true)
+![Bird's eye view of a neighborhood](https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/Data/AdobeStock_296805446.jpeg?raw=true)
 
 ## By Ryan Posternak
 

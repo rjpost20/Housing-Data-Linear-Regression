@@ -51,6 +51,20 @@ The final model, model 9, clocked in with an R-squared of 0.891 and an RMSE $115
 
 ![Model iterations 5 - 9](https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/Graphs/Presentation%20Images/Slide_7.jpeg?raw=true)
 
-![Observed vs predicted home sale prices plot](https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/Graphs/Observed_vs_Predicted.png?raw=true)
+<br>
+
+The final model was assessed on the assumptions of linear regression - linearity, homoscedasticity, normality, and minimal multicollinearit - using visualizations and variance inflation factor scores. The model displayed an acceptable adherence to the assumptions, as expected given the high R-squared and RMSE scores, but there is room for improvement. Namely, the regression plot and residuals plot both showed that the model performed particularly poorly on predicting prices of home sales above $2M; nearly all the largest errors came from home sales above this threshold.
+
+Additionally, the model tended to underpredict sale prices by a slight bit, especially at the higher end of home sales, and a high degree of multicollinearity was present in 25 of the independent variables.
+
+![Residuals plot of predicted prices](https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/Graphs/Residuals_predicted.png?raw=true)
 
 <br>
+
+## Conclusions, Recommendations, and Next Steps
+
+Key conclusions and takeaways from this analysis include the fact that square footage of home space and zip code appear to be the most effective predictors of home sale price, at least in this dataset. Additionally, log transforming the target variable also boosted model performance by a sizeable margin.
+
+Though the model is quite effective in its intended purpose - prediction - caution should be taken when using the model for inferential purposes. As noted from the regression assumptions analysis, a high degree of multicollinearity was present among the input variables, which can render coefficients and standard errors less reliable.
+
+Recommendations of use for the analysis include using the model to set a benchmark price when searching for a home, but not expecting perfection among predictions. The RMSE was about $115k, which may seem high, but it's important to keep in mind that outliers carry outsized influence on RMSE scores. The mean absolute error would likely be potentially lower, which would be more reflective of the expected error the majority of homebuyers purchasing homes under $2M could expect.

@@ -6,6 +6,9 @@
 
 ### Links
 
+Medium article:
+https://medium.com/@rposternak/the-fair-home-price-predictor-c0df07cfe65b
+
 Presentation slidedeck PDF:
 https://github.com/rjpost20/King-County-Housing-Data-Linear-Regression/blob/main/KC_Housing_Data_Analysis_Slides.pdf
 
